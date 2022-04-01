@@ -1,0 +1,31 @@
+{
+  "name": "course-track",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/btech-cdd/course-track.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/btech-cdd/course-track/issues"
+  },
+  "homepage": "https://github.com/btech-cdd/course-track#readme",
+  "dependencies": {
+    "@jhveem/oauth2": "^1.4.0",
+    "axios": "^0.26.1",
+    "body-parser": "^1.19.2",
+    "connect-busboy": "^1.0.0",
+    "cookie-parser": "^1.4.6",
+    "express": "^4.17.3",
+    "express-session": "^1.17.2",
+    "mongoose": "^6.2.9",
+    "uuid": "^8.3.2"
+  }
+}
