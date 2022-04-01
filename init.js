@@ -6,16 +6,13 @@ const oauthSign = require('oauth-sign');
 const oauth2 = require('@jhveem/oauth2');
 const LTIUser = oauth2.LTIUserSchema;
 const canvas = require('./libs/canvas.js');
-const caccl = require('caccl-grade-passback');
-
-console.log(oauth2);
-
 const axios = require('axios');
+const ltidata = require('./lti-data.js');
 
-const CLIENT_SECRET = "Aai2nnE1zdS4mjrOvqZsAQOuyKeBYTcY55GfhWQTQtQqZolGSTN1pNm1uvvgyDGb";
-const CLIENT_ID = '140000000000314';
-const lti_name = 'cosmetology';
-const LTI_URL_BASE = 'https://cosmetology.bridgetools.dev';
+const CLIENT_SECRET = ltidata.client_secret;
+const CLIENT_ID = ltidata.client_id;
+const lti_name = ltidata.lti_name;
+const LTI_URL_BASE = ltidata.lti_url_base;
 
 //this is the post request made when an lti is first launched. 
 
