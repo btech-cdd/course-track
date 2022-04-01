@@ -42,4 +42,5 @@ const init = require("./init.js");
 app.use(init.routes);
 */
 
+console.log(PORT);
 app.listen(PORT, () => console.log(`Server listening on port ${PORT}!`));
